@@ -189,8 +189,8 @@
     margin-left: -150px;
   }
 
-  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin-left: 135px;
+  .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-left: 140px;
   }
 
   /* REVIEW SECTION */
@@ -202,7 +202,7 @@
     padding: 45px 0;
   }
 
-  .reviews .card .img-wrapper {
+  .reviews .cardd .img-wrapper {
     margin-bottom: 25px;
   }
 
@@ -494,6 +494,15 @@
     padding: 0 17.5px 50px 17.5px;
   }
 
+  .empty {
+    display: none;
+  }
+
+  .swiper-pagination-bullets .bullet4,
+  .swiper-pagination-bullets .bullet5 {
+    display: none;
+  }
+
   .projects .title {
     padding: 40px 7.5px 40px 7.5px;
   }
@@ -546,6 +555,13 @@
   .swiper-grid-column > .swiper-wrapper {
     flex-wrap: wrap;
     flex-direction: column;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: unset;
   }
 
   /* REVIEW SECTION */

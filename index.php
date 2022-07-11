@@ -275,31 +275,31 @@
             <h5>Lewisham</h5>
             <h6>300 Units - $100M+</h6>
           </div>
-          <div class="card column swiper-slide"></div>
+          <div class="card column swiper-slide empty"></div>
           <div class="card column swiper-slide">
             <div class="img-wrapper" style="background-image: url('./assets/pendle-hill3.jpeg')"></div>
             <h5>Pendle Hill</h5>
             <h6></h6>
           </div>
-          <div class="card column swiper-slide"></div>
-          <div class="card column swiper-slide"></div>
-          <div class="card column swiper-slide"></div>
-          <div class="card column swiper-slide"></div>
-          <div class="card column swiper-slide"></div>
+          <div class="card column swiper-slide empty"></div>
+          <div class="card column swiper-slide empty"></div>
+          <div class="card column swiper-slide empty"></div>
+          <div class="card column swiper-slide empty"></div>
+          <div class="card column swiper-slide empty"></div>
           <div class="card column swiper-slide">
             <div class="img-wrapper" style="background-image: url('./assets/childcare.jpeg')"></div>
             <h5>Childcare</h5>
             <h6>200 Places - $3.5M</h6>
           </div>
-          <div class="card column swiper-slide"></div>
-          <div class="card column swiper-slide"></div>
-          <div class="card column swiper-slide"></div>
-          <div class="card column swiper-slide"></div>
-          <div class="card column swiper-slide"></div>
-          <div class="card column swiper-slide"></div>
-          <div class="card column swiper-slide"></div>
-          <div class="card column swiper-slide"></div>
-          <div class="card column swiper-slide"></div>
+          <div class="card column swiper-slide empty"></div>
+          <div class="card column swiper-slide empty"></div>
+          <div class="card column swiper-slide empty"></div>
+          <div class="card column swiper-slide empty"></div>
+          <div class="card column swiper-slide empty"></div>
+          <div class="card column swiper-slide empty"></div>
+          <div class="card column swiper-slide empty"></div>
+          <div class="card column swiper-slide empty"></div>
+          <div class="card column swiper-slide empty"></div>
           <div class="card column swiper-slide"></div>
           <div class="card column swiper-slide"></div>
         </div>
@@ -378,10 +378,6 @@
         },
         loop: true,
         loopFillGroupWithBlank: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -404,12 +400,11 @@
         grid: {
           rows: 3,
         },
-        // direction: "horizontal",
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
           renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + '<p class="text-wrapper">' + projects[index] + "</p>" + "</span>";
+            return '<span class="' + className + ' bullet' + index + '">' + '<p class="text-wrapper">' + projects[index] + "</p>" + "</span>";
           },
         },
         breakpoints: {

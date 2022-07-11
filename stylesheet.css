@@ -412,11 +412,11 @@ header .navbar-right .call-us a {
 .projects {
   padding: 0 100px 50px 100px;
   position: relative;
-  background: #F5F5F5;
+  background: #f5f5f5;
 }
 
 .projects .title {
-    padding: 80px 0;
+  padding: 80px 0;
 }
 
 .projectSwiper .swiper-wrapper {
@@ -481,6 +481,7 @@ header .navbar-right .call-us a {
 .swiper-pagination {
   position: absolute;
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -511,13 +512,20 @@ header .navbar-right .call-us a {
   margin-left: -195px;
 }
 
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 15px var(--swiper-pagination-bullet-horizontal-gap, 8px);
   margin-left: 170px;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical > .swiper-pagination-bullets {
+  right: unset;
+  top: 50%;
+  transform: translate3d(0px, -50%, 0);
 }
 
 /* REVIEW SECTION */
@@ -543,7 +551,7 @@ header .navbar-right .call-us a {
 .reviews .card h6,
 .reviews .card h5 {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 150%;
   color: #111827;
 }
